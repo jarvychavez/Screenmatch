@@ -3,7 +3,6 @@ public class Pelicula {
     int fechaDeLanzamiento;
     int duracionEnMinutos;
     boolean incluidoEnElPlan;
-    //javier chavez
 
 
 }
