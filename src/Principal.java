@@ -5,12 +5,11 @@ public class Principal {
         miPelicula.fechaDeLanzamiento = 2021;
         miPelicula.duracionEnMinutos = 120;
 
-        miPelicula.muestraFicheTecnica();
+        miPelicula.muestraFichaTecnica();
         miPelicula.evalua(10);
         miPelicula.evalua(10);
-
-        System.out.println(miPelicula.sumaDeLasEvaluaciones);
-        System.out.println(miPelicula.totalDeEvaluaciones);
+        miPelicula.evalua(7.8);
+        System.out.println(miPelicula.getTotalDeEvaluaciones());
         System.out.println(miPelicula.calculaLaMedia());
 
 
