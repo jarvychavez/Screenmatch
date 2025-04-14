@@ -1,12 +1,14 @@
+package com.aluracursos.screenmatch.modelos;
+
 public class Pelicula {
-    String nombre;
+    public String nombre;
     int fechaDeLanzamiento;
     int duracionEnMinutos;
     boolean incluidoEnElPlan;
     private double sumaDeLasEvaluaciones;
     private int totalDeEvaluaciones;
 
-    int getTotalDeEvaluaciones(){
+    public int getTotalDeEvaluaciones(){
         return totalDeEvaluaciones;
     }
 
@@ -16,14 +18,12 @@ public class Pelicula {
         System.out.println("La pelicula dura: " + duracionEnMinutos);
     }
 
-    void evalua (double nota){
+    public void evalua (double nota){
         sumaDeLasEvaluaciones += nota;
         totalDeEvaluaciones++;
     }
 
-    double calculaLaMedia(){
+    public double calculaLaMedia(){
         return sumaDeLasEvaluaciones / totalDeEvaluaciones;
     }
-
-
 }
