@@ -8,8 +8,7 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-        Pelicula miPelicula = new Pelicula();
-        miPelicula.setNombre("Encanto");
+        Pelicula miPelicula = new Pelicula("Encanto");
         miPelicula.setFechaDeLanzamiento(2021);
         miPelicula.setDuracionEnMinutos(120);
         miPelicula.setIncluidoEnElPlan(true);
@@ -31,8 +30,7 @@ public class Principal {
         casaDragon.muestraFichaTecnica();
         System.out.println(casaDragon.getDuracionEnMinutos());
 
-        Pelicula otraPelicula = new Pelicula();
-        otraPelicula.setNombre("Matrix");
+        Pelicula otraPelicula = new Pelicula("Matrix");
         otraPelicula.setFechaDeLanzamiento(1998);
         otraPelicula.setDuracionEnMinutos(180);
 
@@ -53,8 +51,7 @@ public class Principal {
         episodio.setTotalVisualizaciones(50);
         filtroRecomendacion.filtra(episodio);
 
-        var peliculaDeBruno = new Pelicula();
-        peliculaDeBruno.setNombre("El señor de los anillos");
+        var peliculaDeBruno = new Pelicula("El señor de los anillos");
         peliculaDeBruno.setDuracionEnMinutos(180);
         peliculaDeBruno.setFechaDeLanzamiento(2001);
 
@@ -65,16 +62,8 @@ public class Principal {
 
         System.out.println("Tamaño de la lista: " + listaDePeliculas.size());
         System.out.println("La primera pelicula es: " + listaDePeliculas.get(0).getNombre());
-
         System.out.println(listaDePeliculas.toString());
-
         System.out.println("tosTring de la pelicula: " + listaDePeliculas.get(0).toString());
-
-
-
-
-
-
 
 
 
