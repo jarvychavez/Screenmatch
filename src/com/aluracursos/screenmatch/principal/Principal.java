@@ -66,6 +66,8 @@ public class Principal {
 
 
 
+
+
 //        otraPelicula.muestraFichaTecnica();
 
 
