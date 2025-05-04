@@ -8,6 +8,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -48,6 +49,11 @@ public class PrincipalConBusqueda {
 
             Titulo miTitulo = new Titulo(miTituloOmdb);
             System.out.println("Título ya convertido: " + miTitulo);
+
+            FileWriter escritura = new FileWriter("peliculas.txt");
+            escritura.write(miTitulo.toString());
+            escritura.close();
+
         }catch (NumberFormatException e){
             System.out.println("Ocurrió un error ");
             System.out.println(e.getMessage());
